@@ -1,6 +1,12 @@
 import random
 
 def get_number():
+    """
+    Get number from user.
+    Try until get correct number.
+    :rtype: int
+    :return: number as int
+    """
     while True:
         try:
             user_choice = int(input('Guess the number: '))
@@ -10,6 +16,7 @@ def get_number():
     return user_choice
 
 def guess_number():
+    """Main code of the program"""
     number = random.randint(1, 100)
     user_number = get_number()
 
